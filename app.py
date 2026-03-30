@@ -38,20 +38,3 @@ def fetch_fund_data():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
-```
-
----
-
-**File 2: `requirements.txt`**
-```
-flask
-gunicorn
-yfinance==0.2.66
-curl_cffi
-```
-
----
-
-**File 3: `Procfile`** (no file extension)
-```
-web: gunicorn app:app --bind 0.0.0.0:$PORT
